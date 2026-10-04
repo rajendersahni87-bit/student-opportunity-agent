@@ -270,16 +270,16 @@ with st.sidebar:
             selected_skills = merged
 
         # Interests / Domains
-                   domain_options = [
-               "Software Engineering", "Web Development", "AI/ML", "Data Science",
-               "Web3", "Cloud", "Open Source", "Competitive Programming",
-               "Leadership", "Diversity in Tech", "Mobile Development", "Academics",
-               "Social Impact", "Research"
-           ]
-           default_interests = preset["interests"] if preset else ["Software Engineering", "AI/ML"]
-           for i in default_interests:   # never crash if a preset uses an unlisted interest
-               if i not in domain_options:
-                   domain_options.append(i)
+        domain_options = [
+            "Software Engineering", "Web Development", "AI/ML", "Data Science",
+            "Web3", "Cloud", "Open Source", "Competitive Programming",
+            "Leadership", "Diversity in Tech", "Mobile Development", "Academics",
+            "Social Impact", "Research"
+        ]
+        default_interests = preset["interests"] if preset else ["Software Engineering", "AI/ML"]
+        for i in default_interests:   # never crash if a preset uses an unlisted interest
+            if i not in domain_options:
+                domain_options.append(i)
         selected_interests = st.multiselect(
             "Career & Tech Interests",
             options=domain_options,
