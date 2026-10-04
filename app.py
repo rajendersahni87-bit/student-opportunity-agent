@@ -339,7 +339,7 @@ with col_header:
     st.markdown('<div class="sub-header">Autonomous opportunity matching, hard eligibility verification, and personalized agent roadmaps.</div>', unsafe_allow_html=True)
 with col_status:
     st.markdown(f"""
-    <div style="background-color: #f1f5f9; padding: 10px 14px; border-radius: 8px; border-left: 4px solid #1E88E5; margin-top: 10px;">
+    <div style="background-color: #f1f5f9; padding: 10px 14px; border-radius: 8px; border-left: 4px solid #1E88E5; margin-top: 10px; color: #0f172a;">
         <span style="font-size: 0.85rem; color: #475569;">Active Profile:</span><br/>
         <b>{esc(name)}</b> ({esc(year)} • {esc(branch)})
     </div>
